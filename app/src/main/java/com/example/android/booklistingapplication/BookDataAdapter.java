@@ -50,8 +50,10 @@ public BookDataAdapter(Context context, List<BookData> bookdata){
         BookData currentBook = getItem(position);
     //Find the TextView with view ID author_text_view
         TextView authorOfTheBook = (TextView)listItemView.findViewById(R.id.author_text_view);
+        authorOfTheBook.setText(currentBook.getAuthorOfTheBook());
     //Find the TextView with view ID title_text_view
         TextView titleOfTheBook = (TextView)listItemView.findViewById(R.id.title_text_view);
+        titleOfTheBook.setText(currentBook.getBookTitle());
     //Find the TextView with view ID image_of_book
         ImageView imageUrl = (ImageView)listItemView.findViewById(R.id.image_of_book);
         imageUrl.setImageResource(R.drawable.dummy_book_image);
