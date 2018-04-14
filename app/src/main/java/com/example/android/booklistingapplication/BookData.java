@@ -36,4 +36,8 @@ public class BookData {
     public String getImageUrl() {
         return mImageUrl;
     }
+
+    public String toString(){
+        return mBookTitle+" "+mAuthorOfTheBook+" "+mImageUrl;
+    }
 }
